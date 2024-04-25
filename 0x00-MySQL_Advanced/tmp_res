@@ -1,115 +1,115 @@
-origin	nb_fans	origin_rank
-USA	1110	1
-Sweden	461	2
-Germany	385	3
-United Kingdom	335	4
-Finland	295	5
-Italy	217	6
-Norway	216	7
-France	213	8
-Canada	158	9
-The Netherlands	134	10
-Australia	129	11
-Poland	98	12
-Greece	82	13
-Spain	76	14
-Russia	71	15
-Denmark	67	16
-Belgium	57	17
-Brazil	54	18
-Switzerland	52	19
-Japan	51	20
-Romania	48	21
-Portugal	42	22
-Austria	38	23
-Czech Republic	33	24
-Ukraine	25	25
-Latvia	23	26
-Iceland	22	27
-Hungary	19	28
-Ireland	18	29
-Argentina	17	30
-Serbia	17	30
-Israel	16	32
-Iran	15	33
-Mexico	14	34
-Turkey	14	34
-Chile	13	36
-Estonia	13	36
-Slovak Republic	12	38
-Bulgaria	12	38
-New Zealand	11	40
-Croatia	10	41
-Syria	10	41
-Slovenia	9	43
-Lithuania	9	43
-	8	45
-India	8	45
-Cyprus	7	47
-Belarus	6	48
-Faroe Islands	5	49
-Jordan	5	49
-Indonesia	5	49
-Singapore	5	49
-Malta	5	49
-South Africa	5	49
-Lebanon	4	55
-Peru	4	55
-Bosnia and Herzegovina	4	55
-Costa Rica	4	55
-United Kingdom, USA	3	59
-Taiwan	3	59
-Greece, Sweden	3	59
-China	3	59
-Luxembourg	3	59
-Colombia	3	59
-Denmark, USA	2	65
-UAE	2	65
-Egypt	2	65
-USA, Cyprus	2	65
-Monaco	2	65
-Moldova	2	65
-Sri Lanka	2	65
-Israel, The Netherlands	1	72
-Andorra	1	72
-Tunisia, France	1	72
-Colombia, USA	1	72
-Hungary, United Kingdom	1	72
-Sweden, Finland	1	72
-Australia, United Kingdom	1	72
-Liechtenstein	1	72
-Norway, Finland	1	72
-Belgium, United Kingdom	1	72
-Russia, Canada	1	72
-Iraq, USA	1	72
-Kyrgyzstan, Germany	1	72
-Saudi Arabia	1	72
-Georgia	1	72
-Bahrain	1	72
-Iraq	1	72
-Korea, South	1	72
-Malaysia	1	72
-Greece, USA	1	72
-Israel, Germany	1	72
-Macedonia	1	72
-Portugal, United Kingdom	1	72
-Bosnia and Herzegovina, Croatia	1	72
-Iran, Norway	1	72
-Finland, Sweden	1	72
-Ukraine, Canada	1	72
-Bolivia	1	72
-Armenia	1	72
-Azerbaijan	1	72
-Lithuania, United Kingdom	1	72
-Ecuador	1	72
-Mexico, USA	1	72
-Canada, France	1	72
-Albania	1	72
-Jersey	1	72
-Lithuania, Germany	1	72
-United Kingdom, Greece	1	72
-Swaziland	1	72
-Italy, Spain	1	72
-Venezuela	1	72
-Poland, Sweden	1	72
-Greenland	1	72
+origin	nb_fans
+USA	1110
+Sweden	461
+Germany	385
+United Kingdom	335
+Finland	295
+Italy	217
+Norway	216
+France	213
+Canada	158
+The Netherlands	134
+Australia	129
+Poland	98
+Greece	82
+Spain	76
+Russia	71
+Denmark	67
+Belgium	57
+Brazil	54
+Switzerland	52
+Japan	51
+Romania	48
+Portugal	42
+Austria	38
+Czech Republic	33
+Ukraine	25
+Latvia	23
+Iceland	22
+Hungary	19
+Ireland	18
+Argentina	17
+Serbia	17
+Israel	16
+Iran	15
+Mexico	14
+Turkey	14
+Chile	13
+Estonia	13
+Slovak Republic	12
+Bulgaria	12
+New Zealand	11
+Croatia	10
+Syria	10
+Slovenia	9
+Lithuania	9
+	8
+India	8
+Cyprus	7
+Belarus	6
+Faroe Islands	5
+Jordan	5
+Indonesia	5
+Singapore	5
+Malta	5
+South Africa	5
+Lebanon	4
+Peru	4
+Bosnia and Herzegovina	4
+Costa Rica	4
+United Kingdom, USA	3
+Taiwan	3
+Greece, Sweden	3
+China	3
+Luxembourg	3
+Colombia	3
+Denmark, USA	2
+UAE	2
+Egypt	2
+USA, Cyprus	2
+Monaco	2
+Moldova	2
+Sri Lanka	2
+Israel, The Netherlands	1
+Andorra	1
+Tunisia, France	1
+Colombia, USA	1
+Hungary, United Kingdom	1
+Sweden, Finland	1
+Australia, United Kingdom	1
+Liechtenstein	1
+Norway, Finland	1
+Belgium, United Kingdom	1
+Russia, Canada	1
+Iraq, USA	1
+Kyrgyzstan, Germany	1
+Saudi Arabia	1
+Georgia	1
+Bahrain	1
+Iraq	1
+Korea, South	1
+Malaysia	1
+Greece, USA	1
+Israel, Germany	1
+Macedonia	1
+Portugal, United Kingdom	1
+Bosnia and Herzegovina, Croatia	1
+Iran, Norway	1
+Finland, Sweden	1
+Ukraine, Canada	1
+Bolivia	1
+Armenia	1
+Azerbaijan	1
+Lithuania, United Kingdom	1
+Ecuador	1
+Mexico, USA	1
+Canada, France	1
+Albania	1
+Jersey	1
+Lithuania, Germany	1
+United Kingdom, Greece	1
+Swaziland	1
+Italy, Spain	1
+Venezuela	1
+Poland, Sweden	1
+Greenland	1
