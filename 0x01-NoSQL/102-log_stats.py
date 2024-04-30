@@ -7,8 +7,7 @@ from pymongo import MongoClient
 
 
 def get_log_stats():
-    """def function
-    """
+    """Get stats about Nginx logs"""
     # Connect to MongoDB
     client = MongoClient()
     db = client.logs
@@ -39,7 +38,7 @@ def get_log_stats():
     ]
     top_ips = collection.aggregate(pipeline)
     for index, ip in enumerate(top_ips, start=1):
-        print(f"    {index}. {ip['_id']}: {ip['count']}")
+        print(f"    {ip['_id']}: {ip['count']}")
 
 
 if __name__ == "__main__":
