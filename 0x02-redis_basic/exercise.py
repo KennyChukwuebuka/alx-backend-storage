@@ -5,92 +5,44 @@
 
 import uuid
 import redis
-from typing import Union, Callable, Optional
+from typing import Callable
 from functools import wraps
 
 
-def count_calls(method: Callable) -> Callable:
-    """
-    Decorator function that counts the number of calls made to a method.
-
-    Args:
-        method (Callable): The method to be wrapped.
-
-    Returns:
-        Callable: The wrapped method that increments the call count in Redis.
-
-    Raises:
-        None
-
-    Example:
-        @count_calls
-        def my_method(self, arg1, arg2):
-            # Method implementation
-            pass
+def call_history(method: Callable) -> Callable:
+    """function call_history
     """
     @wraps(method)
     def wrapper(self, *args, **kwargs):
+        """function wrapper
         """
-        A function that acts as a wrapper for the input method,
-        incrementing the call count in Redis.
+        inputs_key = f"{method.__qualname__}:inputs"
+        outputs_key = f"{method.__qualname__}:outputs"
 
-        Args:
-            self: The instance of the class.
-            *args: Variable length argument list.
-            **kwargs: Arbitrary keyword arguments.
+        # Store input arguments
+        self._redis.rpush(inputs_key, str(args))
 
-        Returns:
-            The result of calling the input method with the
-            provided arguments and keyword arguments.
-        """
-        key = method.__qualname__
-        self._redis.incr(key)
-        return method(self, *args, **kwargs)
+        # Execute the original method
+        output = method(self, *args, **kwargs)
+
+        # Store output
+        self._redis.rpush(outputs_key, output)
+
+        return output
     return wrapper
 
 
 class Cache:
     def __init__(self):
-        """
-        Initializes a new instance of the Cache class.
-
-        This method creates a new instance of the
-        Cache class and initializes the
-        `_redis` attribute with a new instance of
-        the Redis client. It also flushes
-        the entire Redis database by calling the
-        `flushdb` method on the Redis client.
-
-        Parameters:
-            None
-
-        Returns:
-            None
+        """function __init__
         """
         self._redis = redis.Redis()
         self._redis.flushdb()
 
-    @count_calls
-    def store(self, data: Union[str, bytes, int, float]) -> str:
-        """func
+    @call_history
+    def store(self, data):
+        """function store
         """
         key = str(uuid.uuid4())
         self._redis.set(key, data)
         return key
-
-    def get(self, key: str, fn: Optional[Callable] =
-            None) -> Union[str, bytes, int, float, None]:
-        """func
-        """
-        value = self._redis.get(key)
-        if value is None:
-            return None
-        if fn:
-            return fn(value)
-        return value
-
-    def get_str(self, key: str) -> Union[str, None]:
-        return self.get(key, fn=lambda d: d.decode("utf-8"))
-
-    def get_int(self, key: str) -> Union[int, None]:
-        return self.get(key, fn=int)
